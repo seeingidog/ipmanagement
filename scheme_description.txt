@@ -1,0 +1,7 @@
+rails g scaffold Vlan vlan_number:integer location_id:integer notes:text created_at:datetime updated_at:datetime
+rails g scaffold Location notes:text name:string created_at:datetime updated_at:datetime
+rails g scaffold Subnet vlan_id:integer range:string gateway:string description:text created_at:datetime updated_at:datetime
+rails g scaffold Allocation vlan_id:integer range:string subnet_id:integer device_id:integer created_at:datetime updated_at:datetime
+rails g scaffold Device notes:text name:string account_id:integer location_id:integer created_at:datetime updated_at:datetime
+rails g scaffold Log level:string created_at:datetime updated_at:datetime type:string message:string
+rails g scaffold Customer name:string notes:text created_at:datetime updated_at:datetime

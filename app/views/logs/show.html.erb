@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Level:</b>
+  <%= @log.level %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @log.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @log.updated_at %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @log.type %>
+</p>
+
+<p>
+  <b>Message:</b>
+  <%= @log.message %>
+</p>
+
+
+<%= link_to 'Edit', edit_log_path(@log) %> |
+<%= link_to 'Back', logs_path %>

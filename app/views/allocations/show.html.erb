@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Vlan:</b>
+  <%= @allocation.vlan_id %>
+</p>
+
+<p>
+  <b>Range:</b>
+  <%= @allocation.range %>
+</p>
+
+<p>
+  <b>Subnet:</b>
+  <%= @allocation.subnet_id %>
+</p>
+
+<p>
+  <b>Device:</b>
+  <%= @allocation.device_id %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @allocation.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @allocation.updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_allocation_path(@allocation) %> |
+<%= link_to 'Back', allocations_path %>

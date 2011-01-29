@@ -1,0 +1,33 @@
+<h1>Listing subnets</h1>
+
+<table>
+  <tr>
+    <th>Vlan</th>
+    <th>Range</th>
+    <th>Gateway</th>
+    <th>Description</th>
+    <th>Created at</th>
+    <th>Updated at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @subnets.each do |subnet| %>
+  <tr>
+    <td><%= subnet.vlan_id %></td>
+    <td><%= subnet.range %></td>
+    <td><%= subnet.gateway %></td>
+    <td><%= subnet.description %></td>
+    <td><%= subnet.created_at %></td>
+    <td><%= subnet.updated_at %></td>
+    <td><%= link_to 'Show', subnet %></td>
+    <td><%= link_to 'Edit', edit_subnet_path(subnet) %></td>
+    <td><%= link_to 'Destroy', subnet, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Subnet', new_subnet_path %>

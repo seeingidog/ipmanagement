@@ -1,0 +1,41 @@
+<%= form_for(@allocation) do |f| %>
+  <% if @allocation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@allocation.errors.count, "error") %> prohibited this allocation from being saved:</h2>
+
+      <ul>
+      <% @allocation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :vlan_id %><br />
+    <%= f.text_field :vlan_id %>
+  </div>
+  <div class="field">
+    <%= f.label :range %><br />
+    <%= f.text_field :range %>
+  </div>
+  <div class="field">
+    <%= f.label :subnet_id %><br />
+    <%= f.text_field :subnet_id %>
+  </div>
+  <div class="field">
+    <%= f.label :device_id %><br />
+    <%= f.text_field :device_id %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %><br />
+    <%= f.datetime_select :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_at %><br />
+    <%= f.datetime_select :updated_at %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

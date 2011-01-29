@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  vlan_number: 1
+  location_id: 1
+  notes: MyText
+  created_at: 2011-01-29 15:22:13
+  updated_at: 2011-01-29 15:22:13
+
+two:
+  vlan_number: 1
+  location_id: 1
+  notes: MyText
+  created_at: 2011-01-29 15:22:13
+  updated_at: 2011-01-29 15:22:13

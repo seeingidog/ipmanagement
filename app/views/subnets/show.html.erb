@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Vlan:</b>
+  <%= @subnet.vlan_id %>
+</p>
+
+<p>
+  <b>Range:</b>
+  <%= @subnet.range %>
+</p>
+
+<p>
+  <b>Gateway:</b>
+  <%= @subnet.gateway %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @subnet.description %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @subnet.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @subnet.updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_subnet_path(@subnet) %> |
+<%= link_to 'Back', subnets_path %>

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Vlan number:</b>
+  <%= @vlan.vlan_number %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @vlan.location_id %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @vlan.notes %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @vlan.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @vlan.updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_vlan_path(@vlan) %> |
+<%= link_to 'Back', vlans_path %>

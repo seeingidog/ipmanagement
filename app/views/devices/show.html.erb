@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Notes:</b>
+  <%= @device.notes %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @device.name %>
+</p>
+
+<p>
+  <b>Account:</b>
+  <%= @device.account_id %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @device.location_id %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @device.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @device.updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_device_path(@device) %> |
+<%= link_to 'Back', devices_path %>
